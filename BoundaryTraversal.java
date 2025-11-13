@@ -14,23 +14,23 @@ class BoundaryTraversal {
         int right =arr[0].length-1;
         int bottom = arr.length-1;
         //top
-        for(int j=left;j<right;j++){
-            System.out.println(arr[top][j]+" ");
+        for(int j=left;j<=right;j++){
+            System.out.print(arr[top][j]+" ");
         }
         System.out.println();
         //right
-        for(int i=0;i<bottom;i++){
-            System.out.println(arr[i][right]+"");
+        for(int i=top+1;i<=bottom;i++){
+            System.out.print(arr[i][right]+" ");
         }
         System.out.println();
         //bottom
-        for(int j=right; j>left;j--){
-            System.out.println(arr[bottom][j]+"");
+        for(int j=right-1; j>=left;j--){
+            System.out.print(arr[bottom][j]+" ");
         }
         System.out.println();
         //left
-        for(int i=bottom; i>top;i--){
-            System.out.println(arr[i][left]+"");
+        for(int i=bottom-1; i>top;i--){
+            System.out.print(arr[i][left]+" ");
         }
         System.out.println();
 
