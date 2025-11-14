@@ -13,11 +13,12 @@ public class BubbleSort {
             }
         }
         if(sorted) break;
-        }
-         for (int x : arr) {
-            System.out.print(x + " ");
+        
+        System.out.print("Step " + (i+1) + ": ");
+                    for (int x : arr) System.out.print(x + " ");
+                    System.out.println();
+    }
     }
     
 }
 
-}
